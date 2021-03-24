@@ -116,3 +116,35 @@ span:nth-child(4) {
   height: 80px;
   border-radius: 50px;
 }
+
+/* *********** GAME LEVEL ************** */
+#gameBoundary {
+  border: inset grey 2px;
+  margin: 5rem 20rem;
+}
+
+.block_style {
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  color: darkcyan;
+}
+
+.block_style div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.block_style img {
+  width: 9.5rem;
+  height: auto;
+}
+
+.value_div {
+  background-color: white;
+  margin: 10px;
+}

@@ -18,8 +18,8 @@ app.get(`/`, (req, res)=>{
     });
   });
 
-app.get(`/newGame`, (req, res)=>{
-  res.render('newGame', {
+app.get(`/level_01`, (req, res)=>{
+  res.render('level_01', {
     title: "Playing Game Level"
   });
 });

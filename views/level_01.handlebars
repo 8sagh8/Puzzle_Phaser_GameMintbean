@@ -1,0 +1,115 @@
+<h1 style="text-align: center; color:aliceblue;">Play Find Path Puzzle Game</h1>
+
+<div id="gameLevel1">
+    <div id="gameBoundary">
+        <div class="row">
+            <div class="col-sm-2 block_style" id="row_01">
+                <img src="assets/Puzzle_Start.jpg" id="img_01" />
+            </div>
+            <div class="col-sm-2 block_style" id="row_02">
+                <img src="assets/Puzzle_Hidden.jpg" id="img_02" />
+            </div>
+            <div class="col-sm-2 block_style" id="row_03">
+                <img src="assets/Puzzle_Hidden.jpg" id="img_03" />
+            </div>
+            <div class="col-sm-2 block_style" id="row_04">
+                <img src="assets/Puzzle_Hidden.jpg" id="img_04" />
+            </div>
+            <div class="col-sm-2 block_style" id="row_05">
+                <img src="assets/Puzzle_Hidden.jpg" id="img_05" />
+            </div>
+            <div class="col-sm-2 block_style" id="row_06">
+                <img src="assets/Puzzle_End.jpg" id="img_06" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2 block_style" id="row_07">
+                <img src="assets/Puzzle_Hidden.jpg" id="img_07" />
+            </div>
+            <div class="col-sm-2 block_style" id="row_08">
+                <img src="assets/Puzzle_Hidden.jpg" id="img_08" />
+            </div>
+            <div class="col-sm-2 block_style" id="row_09">
+                <img src="assets/Puzzle_Hidden.jpg" id="img_09" />
+            </div>
+            <div class="col-sm-2 block_style" id="row_10">
+                <img src="assets/Puzzle_Hidden.jpg" id="img_10" />
+            </div>
+            <div class="col-sm-2 block_style" id="row_11">
+                <img src="assets/Puzzle_Hidden.jpg" id="img_11" />
+            </div>
+            <div class="col-sm-2 block_style" id="row_12">
+                <img src="assets/Puzzle_Hidden.jpg" id="img_12" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{{!-- SCRIPTING --}}
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#img_02").click(function () {
+            $("#img_02").attr("src", "assets/Puzzle_Uncovered.jpg");
+            const value = document.createElement("div");
+            value.innerText = "2";
+            $("#row_02").append(value);
+        });
+        $("#img_03").click(function () {
+            $("#img_03").attr("src", "assets/Puzzle_Uncovered.jpg");
+            const value = document.createElement("div");
+            value.innerText = "2";
+            $("#row_03").append(value);
+        });
+        $("#img_04").click(function () {
+            $("#img_04").attr("src", "assets/Puzzle_Uncovered.jpg");
+            const value = document.createElement("div");
+            value.innerText = "2";
+            $("#row_04").append(value);
+        });
+        $("#img_05").click(function () {
+            $("#img_05").attr("src", "assets/Puzzle_Bomb.jpg");
+
+        });
+
+        $("#img_07").click(function () {
+            $("#img_07").attr("src", "assets/Puzzle_Uncovered.jpg");
+            const value = document.createElement("div");
+            value.innerText = "1";
+            $("#row_07").append(value);
+        });
+        $("#img_08").click(function () {
+            $("#img_08").attr("src", "assets/Puzzle_Bomb.jpg");
+        });
+        $("#img_09").click(function () {
+            $("#img_09").attr("src", "assets/Puzzle_Bomb.jpg");
+        });
+        $("#img_10").click(function () {
+            $("#img_10").attr("src", "assets/Puzzle_Uncovered.jpg");
+            const value = document.createElement("div");
+            value.innerText = "2";
+            $("#row_10").append(value);
+        });
+        $("#img_11").click(function () {
+            $("#img_11").attr("src", "assets/Puzzle_Uncovered.jpg");
+            const value = document.createElement("div");
+            value.innerText = "2";
+            $("#row_11").append(value);
+        });
+        $("#img_12").click(function () {
+            $("#img_12").attr("src", "assets/Puzzle_Bomb.jpg");
+        });
+    });
+</script>
